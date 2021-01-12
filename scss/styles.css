@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.header {
+  width: 100%;
+  height: 600px;
+  background-color: #043851;
+  min-width: 350px;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+          clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+
+.header__nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  background-color: #043851;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav--img {
+  height: 70%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__nav--icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__nav--icon {
+    display: initial;
+  }
+}
+
+.header__nav--items {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav--items a {
+  margin: 0 20px 0 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.header__nav--items a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 4px;
+  padding: 5px 1px 5px 1px;
+}
+
+@media (max-width: 768px) {
+  .header__nav--items {
+    display: none;
+  }
+}
+
+.header__information {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header__information--title {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "Ruluko", sans-serif;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding: 30px 0;
+  margin: 30px auto 50px auto;
+}
+
+.header__information--descrption {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__information--button {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.header__information--button a {
+  background-color: #18A0FB;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 15px 50px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.header__information--button a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .header__information--button {
+    margin: 0;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 435px) {
+  .header__information--button {
+    margin: 0;
+    margin-top: 50px;
+  }
+}
+
+/* -----------------------------Seccion de informacion------------------------------ */
+main {
+  width: 100%;
+  min-width: 350px;
+  height: auto;
+}
+
+.information {
+  width: 100%;
+  height: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.information__container {
+  height: auto;
+  width: 100%;
+  max-width: 1050px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  border-radius: 30px;
+}
+
+.information__container h3 {
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.information__container--toptiltle {
+  margin: 150px 0 70px 0;
+}
+
+@media (max-width: 768px) {
+  .information__container--toptiltle {
+    margin: 0;
+  }
+}
+
+@media (max-width: 435px) {
+  .information__container--toptiltle {
+    margin-bottom: 40px;
+  }
+}
+
+.information__container--downtitle {
+  margin: 150px 0 80px 0;
+}
+
+@media (max-width: 768px) {
+  .information__container--downtitle {
+    margin: 0;
+    margin: 120px 0 40px 0;
+  }
+}
+
+@media (max-width: 435px) {
+  .information__container--downtitle {
+    margin-top: 90px;
+  }
+}
+
+.information__article {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+@media (max-width: 768px) {
+  .information__article {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 435px) {
+  .information__article {
+    row-gap: 20px;
+  }
+}
+
+.information__article p {
+  width: 80%;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .information__article p {
+    text-align: center;
+  }
+}
+
+.information__article--toptext {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+@media (max-width: 768px) {
+  .information__article--toptext {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+.information__article--downtext {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+@media (max-width: 768px) {
+  .information__article--downtext {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+.information__article--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.information__article--img img {
+  width: 150px;
+  height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+}
+
+/* -----------------------------Seccion de beneficios carajo------------------------------- */
+.beneficios {
+  background-color: #043851;
+  -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+  width: 100%;
+  height: 400PX;
+  min-width: 350px;
+}
+/*# sourceMappingURL=styles.css.map */

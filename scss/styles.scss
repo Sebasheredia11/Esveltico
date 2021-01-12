@@ -1,0 +1,230 @@
+@import "lib/variables";
+@import "lib/globales";
+@import "lib/mixins";
+
+.header{
+    width: 100%;
+    height: 600px;
+    background-color: $blue-esveltico;
+    min-width: 350px;
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+
+.header__nav{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    background-color: $blue-esveltico;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    &--img{
+        height: 70%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    &--icon{
+        display: none;
+        @include tablet{ 
+            display: initial;
+        }
+    }
+}
+
+.header__nav--items{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+        margin: 0 20px 0 20px;
+        font-family: $roboto;
+        color: $white-esveltico;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    a:hover{
+        background-color: $white-esveltico;
+        color: $black-esveltico;
+        border-radius: 4px;
+        padding: 5px 1px 5px 1px;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+
+.header__information{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &--title{
+        font-size: 3rem;
+        color: $white-esveltico;
+        font-family: $ruluko;
+        letter-spacing:0.5rem;
+        text-align: center;
+        padding: 30px 0;
+        margin: 30px auto 50px auto;
+    }
+    &--descrption{
+        font-family: $roboto;
+        font-weight: 400;
+        color: $white-esveltico;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 10px;  
+        margin-right: auto;
+        margin-left:auto ;
+    }
+}
+
+.header__information--button{
+    width:100%;
+    height: 500px;
+    text-align: center;
+    margin-top: 130px;
+    a{
+        background-color: $blue-light;
+        color: $white-esveltico;
+        font-family: $roboto;
+        font-weight: 400;
+        padding: 15px 50px;
+        border-radius: 20px;
+        font-size: 1.4rem;
+        color: $white-esveltico; 
+    }
+    a:hover{
+        background-color: $white-esveltico;
+        color: $black-esveltico;
+    }
+
+    @include tablet{
+        margin: 0;
+        margin-top: 100px;
+    }
+
+    @include mobile{
+        margin: 0;
+        margin-top: 50px;
+    }
+}
+/* -----------------------------Seccion de informacion------------------------------ */
+
+main{
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+}
+
+.information{
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.information__container{
+    height: auto;
+    width: 100%;
+    max-width: 1050px;
+    position: relative;
+    margin-left:auto ;
+    margin-right: auto;
+    padding: 0 15px;
+    border-radius: 30px;
+    h3{
+        letter-spacing: 0.1rem;
+        font-family: $roboto;
+        font-size: 1.7rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &--toptiltle{
+        margin: 150px 0 70px 0;
+        @include tablet{
+            margin: 0;
+        }
+        @include mobile{
+            margin-bottom: 40px;
+        }
+    }
+    &--downtitle{
+        margin: 150px 0 80px 0;
+        @include tablet{
+            margin: 0;
+            margin: 120px 0 40px 0;
+        }
+        @include mobile{
+            margin-top: 90px;
+        }
+    }
+}
+
+.information__article{
+    height: 100%;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr;
+    @include tablet{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @include mobile{
+        row-gap: 20px;
+    }
+    p{
+        width: 80%;
+        height: auto;
+        align-self: center;
+        color: black;
+        font-family: $roboto;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: start;
+        @include tablet{
+            text-align: center;
+        }
+    }
+
+    &--toptext{
+        justify-self: end;
+        @include tablet{
+            justify-self: center;
+        }
+    }
+
+    &--downtext{
+        justify-self: start;
+        @include tablet{
+            justify-self: center;
+        }
+    }
+    &--img{
+        display: flex;
+    width: auto;
+    height: auto;
+    justify-self: center;
+    align-self: center;    
+        img{
+            width: 150px;
+            height: 150px;
+            justify-content: center;
+            border-radius: 20px;
+        }
+    }  
+}
+
+/* -----------------------------Seccion de beneficios carajo------------------------------- */
+.beneficios{
+    background-color: $blue-esveltico;
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    width: 100%;
+    height: 400PX;
+    min-width: 350px;
+}
+

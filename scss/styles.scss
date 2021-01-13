@@ -219,12 +219,255 @@ main{
     }  
 }
 
-/* -----------------------------Seccion de beneficios carajo------------------------------- */
-.beneficios{
+/* -----------------------------Seccion de servicios carajo------------------------------- */
+.servicios{
     background-color: $blue-esveltico;
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     width: 100%;
-    height: 400PX;
+    height: auto;
     min-width: 350px;
+
+    
 }
+
+.servicios__container{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    max-width: 1050px;
+    padding-bottom: 70px;
+
+    &--title{
+        width: 100%;
+        color: $white-esveltico;
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: $roboto;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+
+.servicios__cards{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    @include tablet{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 1100px;
+    }
+    
+    &--card{
+        background-color: $white-esveltico;
+        border-radius: 40px;
+        width: 350px;
+        justify-self: center;
+        align-self: center;
+        height: 450px;
+        display: grid;
+        grid-template: repeat(4,1fr) / 1fr;
+
+        @include tablet{
+            width: 350px;
+        }
+
+        @include mobile{
+            width: 250px;
+        }
+
+        .card--img{
+            justify-self: center;
+            align-self: center;
+            img{
+                width: 50px;
+                height: 50px;
+                justify-content: center;  
+            }
+        } 
+
+        h3{
+            color: $black-esveltico;
+            text-align: center;
+            align-self: flex-start;
+            font-size: 1.5rem;
+            font-family: $roboto;
+            font-weight: 700;
+        }
+        p{
+            padding: 0 20px 50px 20px;
+            justify-self: center;
+            align-self: flex-start;
+            color: $black-esveltico;
+            font-size: 1.1rem;
+            font-family: $roboto;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+    .card--button{
+        width: auto;
+        justify-self: center;
+        align-self: center;
+        a{
+            background-color: $blue-light;
+            color: $white-esveltico;
+            font-family: $roboto;
+            padding: 15px 12px;
+            font-weight: 400;
+            border-radius: 20px;
+            font-size: 1.4rem;
+            color: $white-esveltico; 
+        }
+
+        a:hover{
+            background-color: $black-esveltico;
+            color: $white-esveltico ;
+        }
+    }   
+}
+
+
+// seccion de beneficios ------------------------ 
+
+.beneficios{
+    width: 100%;
+    height: 800px;
+    min-width: 350px;
+
+    &--title{
+        color: $black-esveltico;
+        font-size: 2rem;
+        font-family: $roboto;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 50px;
+        padding-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__container{
+        max-width: 1050px;
+        width: 90%;
+        height: 600px;
+        background-color: $white-esveltico;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.container__cards{
+    height: 600px;
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+
+    @include tablet{
+        grid-template: repeat(4,1fr) /1fr;
+        height: auto;
+        row-gap: 30px;
+    }
+
+            .item_1{
+                background-color: $blue-light;
+            }
+
+            .item_2{
+                background-color: #ffdd59;
+            }
+
+            .item_3{
+                background-color: $yellow-card;
+            }
+
+            .item_4{
+                background-color: $blue-light;
+            }
+
+
+    .card__item{
+        display: grid;
+        width: 330px;
+        height: 80%;
+        justify-self: center;
+        align-self: center;
+        border-radius: 20px;
+        grid-template: repeat(3,1fr) / 1fr ;
+
+        @include tablet{
+            width: 350px;
+        }
+
+        @include mobile{
+            width: 250px;
+        }
+
+        
+
+        
+            
+            // background-color: $yellow-card;
+            // .item_1{
+            //     background-color: $blue-light;
+            // }
+
+
+
+
+        
+        h4{
+            color: white;
+            font-family: $roboto;
+            font-weight: 500;
+            text-align: center;
+            font-size: 1.4rem;
+            align-self: center;
+        }
+
+        p{
+            color: $white-esveltico;
+            font-family: $roboto;
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+            padding: 0 5px 0 5px;
+        }
+    
+        &--img{
+            position: relative;
+            img{
+                position: absolute;
+                left: 120px;
+                top: 40px;
+                border-radius: 20px;
+
+                @include tablet{
+                    width: 60px;
+                    height: 60px;
+                    left: 145px;
+                    top: 30px;
+                }
+
+                @include mobile{
+                    left: 95px;
+                    top: 40px;
+                }
+            }
+        }
+    }
+
+   
+}
+
+
+
 

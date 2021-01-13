@@ -309,13 +309,290 @@ main {
   border-radius: 20px;
 }
 
-/* -----------------------------Seccion de beneficios carajo------------------------------- */
-.beneficios {
+/* -----------------------------Seccion de servicios carajo------------------------------- */
+.servicios {
   background-color: #043851;
   -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
           clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
   width: 100%;
-  height: 400PX;
+  height: auto;
   min-width: 350px;
+}
+
+.servicios__container {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  max-width: 1050px;
+  padding-bottom: 70px;
+}
+
+.servicios__container--title {
+  width: 100%;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.servicios__cards {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+@media (max-width: 768px) {
+  .servicios__cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    height: 1100px;
+  }
+}
+
+.servicios__cards--card {
+  background-color: #ffffff;
+  border-radius: 40px;
+  width: 350px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  height: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+  -ms-grid-columns: 1fr;
+      grid-template: repeat(4, 1fr)/1fr;
+}
+
+@media (max-width: 768px) {
+  .servicios__cards--card {
+    width: 350px;
+  }
+}
+
+@media (max-width: 435px) {
+  .servicios__cards--card {
+    width: 250px;
+  }
+}
+
+.servicios__cards--card .card--img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.servicios__cards--card .card--img img {
+  width: 50px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicios__cards--card h3 {
+  color: #000000;
+  text-align: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.servicios__cards--card p {
+  padding: 0 20px 50px 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #000000;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.servicios__cards .card--button {
+  width: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.servicios__cards .card--button a {
+  background-color: #18A0FB;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  padding: 15px 12px;
+  font-weight: 400;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.servicios__cards .card--button a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.beneficios {
+  width: 100%;
+  height: 800px;
+  min-width: 350px;
+}
+
+.beneficios--title {
+  color: #000000;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 50px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.beneficios__container {
+  max-width: 1050px;
+  width: 90%;
+  height: 600px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container__cards {
+  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container__cards {
+    -ms-grid-rows: (1fr)[4];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(4, 1fr)/1fr;
+    height: auto;
+    row-gap: 30px;
+  }
+}
+
+.container__cards .item_1 {
+  background-color: #18A0FB;
+}
+
+.container__cards .item_2 {
+  background-color: #ffdd59;
+}
+
+.container__cards .item_3 {
+  background-color: #ffdd55;
+}
+
+.container__cards .item_4 {
+  background-color: #18A0FB;
+}
+
+.container__cards .card__item {
+  display: -ms-grid;
+  display: grid;
+  width: 330px;
+  height: 80%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 20px;
+  -ms-grid-rows: (1fr)[3];
+  -ms-grid-columns: 1fr;
+      grid-template: repeat(3, 1fr)/1fr;
+}
+
+@media (max-width: 768px) {
+  .container__cards .card__item {
+    width: 350px;
+  }
+}
+
+@media (max-width: 435px) {
+  .container__cards .card__item {
+    width: 250px;
+  }
+}
+
+.container__cards .card__item h4 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.4rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container__cards .card__item p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 5px 0 5px;
+}
+
+.container__cards .card__item--img {
+  position: relative;
+}
+
+.container__cards .card__item--img img {
+  position: absolute;
+  left: 120px;
+  top: 40px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .container__cards .card__item--img img {
+    width: 60px;
+    height: 60px;
+    left: 145px;
+    top: 30px;
+  }
+}
+
+@media (max-width: 435px) {
+  .container__cards .card__item--img img {
+    left: 95px;
+    top: 40px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

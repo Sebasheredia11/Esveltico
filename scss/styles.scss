@@ -79,6 +79,42 @@
         margin-right: auto;
         margin-left:auto ;
     }
+
+    &--facebook{
+        position: fixed;
+        top: 300px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &--instagram{
+        position: fixed;
+        top: 270px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &--linkedin{
+        position: fixed;
+        top: 240px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &--whatsaap{
+        position: fixed;
+        top: 330px;
+        img{
+            width: 29px;
+            height: 29px;
+        }
+    }
 }
 
 .header__information--button{
@@ -236,7 +272,6 @@ main{
     padding-bottom: 70px;
 
     &--title{
-        width: 100%;
         color: $white-esveltico;
         font-size: 2rem;
         font-weight: 400;
@@ -335,7 +370,7 @@ main{
             color: $white-esveltico; 
         }
         a:hover{
-            background-color: $black-esveltico;
+            background-color: $blue-esveltico;
             color: $white-esveltico ;
         }
     }   
@@ -346,7 +381,7 @@ main{
 
 .beneficios{
     width: 100%;
-    height: 800px;
+    height: auto;
     min-width: 350px;
 
     &--title{
@@ -354,7 +389,7 @@ main{
         font-size: 2rem;
         font-family: $roboto;
         text-align: center;
-        font-weight: 500;
+        font-weight: 400;
         margin-top: 50px;
         padding-top: 20px;
         margin-bottom: 40px;
@@ -362,10 +397,11 @@ main{
     &__container{
         max-width: 1050px;
         width: 90%;
-        height: 600px;
+        height: auto;
         background-color: $white-esveltico;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 40px;
     }
 }
 
@@ -382,21 +418,21 @@ main{
         row-gap: 30px;
     }
 
-            .item_1{
-                background-color: $blue-light;
-            }
+    .item_1{
+        background-color: $blue-light;
+    }
 
-            .item_2{
-                background-color: #ffdd59;
-            }
+    .item_2{
+        background-color: #ffdd59;
+    }
 
-            .item_3{
-                background-color: $yellow-card;
-            }
+    .item_3{
+        background-color: $yellow-card;
+    }
 
-            .item_4{
-                background-color: $blue-light;
-            }
+    .item_4{
+        background-color: $blue-light;
+    }
 
 
     .card__item{
@@ -461,6 +497,468 @@ main{
     }
 }
 
+// Formularios empresa y hogar ----------------------------------------------------------------------------------------
 
+
+.header__forms{
+    min-width: 350px;
+    width: 100%;
+    height: 80px;
+    background-color: $blue-esveltico;
+
+    &--img{
+        display: flex;
+        height: inherit;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        padding-left: 20px;
+
+        @include tablet{
+            justify-content: center;
+        }
+    }
+}
+
+.formulario{
+    height: 1000px;
+    width: 100%;
+
+    &--img{
+        display: flex;
+        justify-content: center;
+        padding-top: 70px;
+
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    h2{
+        width: 100%;
+        color: $black-esveltico;
+        font-family: $roboto;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .formulario--description{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        color: $black-esveltico;
+        font-weight: 400;
+        font-family: $roboto;
+        font-size: 1.2rem;
+        text-align: center;
+        max-width: 600px;
+        padding: 40px 10px 0px 10px;
+    }
+    &__container{
+        width: 500px;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: $roboto;
+        color: $white-esveltico;
+        box-shadow: -1px 4px 25px 1px rgba(0,0,0,0.43);
+
+        @include tablet{
+            width: 350px;
+        }
+
+        @include mobile{
+            width: 280px;
+        }
+    }
+    .controls{
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        font-family: $roboto;
+        border: 1px solid black;
+    }
+    .terms{
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        a{
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    .boton--form{
+        width: 100%;
+        background: $blue-light;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        &:hover{
+            background-color: $blue-esveltico;
+        }
+    }
+    &__pasos{
+        height: 500px;
+        padding: 0 30px 0 30px;
+        margin-bottom: 200px;
+        
+        h2{
+            padding-top: 100px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        p{
+            width: 100%;    
+            padding-top: 10px;
+            margin: 0;
+            color: $black-esveltico;
+            font-weight: 300;
+            font-family: $roboto;
+            font-size: 1rem;
+            text-align: start;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .button-return{
+        margin-top: 50px;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        a{
+            height: auto;
+            background-color: $blue-light;
+            color: $white-esveltico;
+            font-family: $roboto;
+            font-weight: 400;
+            padding: 10px 40px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            color: $white-esveltico;         
+            &:hover{
+                background-color: $blue-esveltico;
+                color: $white-esveltico;
+            }
+        }
+    } 
+}
+
+// ----------------------------------------------------------------
+
+.proyectos{
+    min-width: 350px;    
+    width: 100%;
+    height: auto;
+    background-color: $blue-esveltico;
+    
+    &--title{
+        text-align: center;
+        font-family: $roboto;
+        color: white;
+        font-weight: 400;
+        font-size: 2rem;
+        margin-top: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__container{
+        width: 60%;
+        height: 700px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr ;
+        row-gap: 20px;
+        column-gap: 20px;
+        padding-bottom: 50px;
+        
+        @include tablet{
+            grid-template: repeat(4,1fr) / 1fr ;
+            row-gap: 30px;
+            height: auto;
+        }
+
+        &--img{
+            position: relative;
+            cursor: pointer;
+            justify-self: center;
+            align-self: center;
+
+            img{
+                background-color: white;
+                width: 250px;
+                height: 250px;
+                border: 4px solid white;
+                border-radius: 130px;
+
+                &:hover{
+                    width: 280px;
+                    height: 280px; 
+                    border-radius: 500px;
+                }
+
+                @include mobile{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+// Trabaja con nosotrosssssssssssssssssssssssssssssssssssssssssssssss
+
+.empleo{
+    width: 100%;
+    height: auto;
+    min-width: 350px;
+
+    &--title{
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: $roboto;
+        color:$black-esveltico;
+        font-weight: 400;
+        font-size: 2rem;
+        padding-top: 30px;
+      
+    }
+
+    &--description{
+       
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+        text-align: center;
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 0 10px 0 10px;
+        margin-bottom: 100px;
+    }
+
+    &__form{
+        width: 450px;
+        height: auto;
+        padding: 30px;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 4px;
+        font-family: $roboto;
+        color: $white-esveltico;
+        border-radius: 20px;
+        box-shadow: -1px 4px 25px 1px rgba(0,0,0,0.43);;
+
+        .terms{
+            color: $white-esveltico;
+
+            a{
+                color: aliceblue;
+                text-decoration: underline;
+            }
+        }
+
+        @include tablet{
+            width: 350px;
+        }
+
+        @include mobile{
+            width: 280px;
+        }
+    }
+
+    &--items{
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        font-family: $roboto;
+        border: 1px solid black;
+    }
+
+    .boton--form{
+        width: 100%;
+        background: $blue-light;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+        border-radius: 10px;
+        &:hover{
+            background-color: $white-esveltico;
+            color: $black-esveltico;
+        }
+    }
+}
+
+
+// ----------------------------------------------------------------------------
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: $blue-esveltico;
+    min-width: 350px;
+    
+    .footer{
+        width: 100%;
+        height: auto;
+        display: grid;
+        margin-top: 200px;
+        grid-template: 60% 40% /1fr;
+
+        &__images{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__imagenes--img{
+            width: 55px;
+            height: 55px;
+
+            img{
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        &__description{
+            background-color:$blue-esveltico;
+            &--terms{
+                color: white;
+                text-align: center;
+                font-family: $roboto;
+                font-weight: 300;
+                padding-top: 10px ;
+            }
+
+            &--esveltico{
+                color: white;
+                text-align: center;
+                font-family: $roboto;
+                font-weight: 300;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+
+// ---------------------PAGINA DE PROYECTOS-------------------------------
+
+.home_fixed{
+    position: fixed;
+    top: 250px;
+    right: 0;
+
+    img{
+        width: 40px;
+        height: 100px;
+    }
+}
+
+.proyectos_realizados{
+    width: 100%;
+    height: auto;
+    min-width: 350px;
+
+    h1{
+        color: $black-esveltico;
+        font-family: $roboto;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    p{
+        color: $black-esveltico;
+        font-family: $roboto;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    &__container{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+
+
+        h2{
+            width: 400px;
+            color: $white-esveltico;
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 1.2rem;
+            text-align: start;
+            padding: 9px;
+            background-color: $blue-light;
+            border-radius: 0px 18px 18px 0px;
+            margin-top: 30px;
+
+            @include mobile{
+                width: 250px;
+            }
+        }
+    }
+
+    .proyectos__imgs{
+        max-width: 1050px;
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-row: 50px;
+       
+
+        @include tablet{
+            grid-template: repeat(3,1fr) /1fr ;
+            grid-row: 20px;
+        }
+
+        .img_item{
+            height: 300px;
+            width: 300px;
+
+            @include mobile{
+                width:  270px;
+                height: 270px;
+            }
+            justify-self: center;
+            justify-content: center;
+            align-self: center;
+            img{
+                width: 280px;
+                height: 280px; 
+
+                @include mobile{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
 
 

@@ -21,8 +21,8 @@
             </div>
             <ul class="header__nav--items">
                 <li><a href="#beneficts">Beneficios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Trabaja con nosotros</a> </li> 
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#work">Trabaja con nosotros</a> </li> 
             </ul>  
         </nav>
         <section class="header__information">
@@ -30,6 +30,18 @@
             <h2 class="header__information--descrption">Somos una empresa dedicada a la remodelacion y decoracion de interiores trabajando con los mejores estandares de calidad.</h2>
             <div class="header__information--button">
                 <a href="#servicios">Servicios</a>
+            </div>
+            <div class="header__information--facebook">
+                <a href="#"><img src="http://imgfz.com/i/hsOqKD5.png" alt=""></a>
+            </div>
+            <div class="header__information--instagram">
+                <a href="/hogar.html"><img src="http://imgfz.com/i/gG7Pxyo.png" alt=""></a>
+            </div>
+            <div class="header__information--linkedin">
+                <a href="#"><img src="http://imgfz.com/i/czmIEkH.png" alt=""></a>
+            </div>
+            <div class="header__information--whatsaap">
+                <a href=""> <img src="http://imgfz.com/i/GY60UjF.png" alt=""></a>
             </div>
         </section>
     </header>
@@ -71,7 +83,7 @@
                         <h3>Remodela tu hogar</h3>
                         <p>En esta seccion podras solicitar el servicio para remodelar tu inmueble con resultados estupendos.</p>
                         <div class="card--button">
-                            <a href="#">Remodela Ahora</a>
+                            <a href="/hogar.html">Remodela Ahora</a>
                         </div>
                     </div>
                     <div class="servicios__cards--card">
@@ -81,7 +93,7 @@
                         <h3>Remodela tu empresa</h3>
                         <p>Si deseas adquir los servicios para remodelaciones de tipo mayor, esta es la seccion indicada.</p>
                         <div class="card--button">
-                            <a href="#">Remodela Ahora</a>
+                            <a href="/empresa.html">Remodela Ahora</a>
                         </div>
                     </div>
                 </div>
@@ -122,9 +134,75 @@
                 </div>
             </section>
         </section>
-        <section></section>
-        <section></section>
+        <section class="proyectos">
+            <h2 id="projects" class="proyectos--title">Proyectos realizados</h2>
+            <section class="proyectos__container"> 
+                <div class="proyectos__container--img">
+                    <img src="http://imgfz.com/i/Do5RZkq.png" alt="">
+                </div>
+                <div class="proyectos__container--img">
+                    <img src="http://imgfz.com/i/Do5RZkq.png" alt="">
+                </div>
+                <div class="proyectos__container--img">
+                    <img src="http://imgfz.com/i/Do5RZkq.png" alt="">
+                </div>
+                <div class="proyectos__container--img">
+                    <a href="proyectos.html"><img src="/accets/imagenes/IMAGEN.png" alt=""></a>    
+                </div>
+            </section>
+        </section>
+        <section id="work" class="empleo">
+            <h2 class="empleo--title">¿Quieres hacer parte de nuestra comunidad?</h2>
+            <p class="empleo--description">Si quieres trabajar en la compañia de decoracion y remodelacion de interiores mas grande de la industria por favor llena este formulario y pronto te haremos saber si existe un cupo para ti. </p>
+                <form class="empleo__form"  method="POST">
+                    <label for="">
+                        <input class="empleo--items" type="text" name="nombre" id="nombres" placeholder="Nombre">
+                    </label>
+                    <label for="">
+                         <input class="empleo--items" type="text" name="apellido" id="apellidos" placeholder="Apellido">
+                    </label>
+                    <label for="">
+                        <input class="empleo--items" type="email" name="email" id="email" placeholder="Correo electronico">
+                    </label>
+                   <label for="">
+                       <input class="empleo--items" type="tel" name="telefono" id="telefono" placeholder="Numero de telefono">
+                   </label>
+                    <select class="empleo--items" name="" id="">
+                        <option value="Decorador"></option>
+                        <option value="Asesor">Asesor</option>
+                        <option value="Jefe de obra">Jefe de obra</option>
+                        <option value=" Diseñador">Diseñador</option>
+                    </select>
+                    <label for="">
+                        <textarea class="empleo--items" name="trabajo" id="descripcion_trabajo" cols="30" rows="4" placeholder="Cuentanos un del porque quieres trabajar con nosotros"></textarea>
+                    </label>
+                    <p class="terms">Estoy de acuerdo con los terminos y  <a href="">ley de proteccion de datos</a></p>
+                    <button class="boton--form" type="">Enviar</button>
+                </form>
+        </section>
     </main> 
+    <footer>
+        <section class="footer">
+            <div class="footer__images">
+                <div class="footer__imagenes--img">
+                    <a href="https://www.facebook.com/esvelticoCol" target="blank"><img src="http://imgfz.com/i/hsOqKD5.png" alt=""></a> 
+                </div>
+                <div class="footer__imagenes--img">
+                    <a href="#"><img src="http://imgfz.com/i/gG7Pxyo.png" alt=""></a> 
+                </div>
+                <div class="footer__imagenes--img">
+                    <a href="https://www.linkedin.com/company/esveltico/about/?viewAsMember=true" target="blank"><img src="http://imgfz.com/i/czmIEkH.png" alt=""></a> 
+                </div>
+                <div class="footer__imagenes--img">
+                    <a href="#"><img src="http://imgfz.com/i/GY60UjF.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__description">
+                <p class="footer__description--terms">Terminos | Privacidad</p>
+                <p class="footer__description--esveltico">Esveltico 2021</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
 

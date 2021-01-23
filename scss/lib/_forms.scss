@@ -1,0 +1,53 @@
+.formulario__container{
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: $roboto;
+    box-shadow: -1px 4px 25px 1px rgba(0,0,0,0.43);
+
+    @include tablet{
+        width: 350px;
+    }
+
+    @include mobile{
+        width: 280px;
+    }
+}
+.form--items{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-family: $roboto;
+    border: 1px solid black;
+}
+.terms{
+    
+    text-align: start;
+    font-size: 1rem;
+    color: black;
+    font-family: $roboto;
+    font-weight: 300;
+    a{
+        color: black;
+        text-decoration: underline;
+    }
+    padding-bottom: 20px;
+}
+.boton--form{
+    width: 100%;
+    background: $blue-light;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    &:hover{
+        background-color: $blue-esveltico;
+    }
+}

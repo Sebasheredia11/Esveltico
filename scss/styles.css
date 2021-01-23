@@ -9,6 +9,70 @@
 
 body {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.formulario__container {
+  width: 500px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-shadow: -1px 4px 25px 1px rgba(0, 0, 0, 0.43);
+          box-shadow: -1px 4px 25px 1px rgba(0, 0, 0, 0.43);
+}
+
+@media (max-width: 768px) {
+  .formulario__container {
+    width: 350px;
+  }
+}
+
+@media (max-width: 435px) {
+  .formulario__container {
+    width: 280px;
+  }
+}
+
+.form--items {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid black;
+}
+
+.terms {
+  text-align: start;
+  font-size: 1rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.terms a {
+  color: black;
+  text-decoration: underline;
+}
+
+.boton--form {
+  width: 100%;
+  background: #18A0FB;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.boton--form:hover {
+  background-color: #043851;
 }
 
 .header {
@@ -72,7 +136,6 @@ body {
 
 .header__nav--items a {
   margin: 0 20px 0 20px;
-  font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 0.8rem;
   font-weight: 500;
@@ -108,14 +171,20 @@ body {
 }
 
 .header__information--descrption {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 1.2rem;
   text-align: center;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 768px;
+}
+
+@media (max-width: 435px) {
+  .header__information--descrption {
+    max-width: 300px;
+  }
 }
 
 .header__information--facebook {
@@ -168,7 +237,6 @@ body {
 .header__information--button a {
   background-color: #18A0FB;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding: 15px 50px;
   border-radius: 20px;
@@ -222,7 +290,6 @@ main {
 
 .information__container h3 {
   letter-spacing: 0.1rem;
-  font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
   text-align: center;
   font-weight: 500;
@@ -293,7 +360,6 @@ main {
       -ms-grid-row-align: center;
       align-self: center;
   color: black;
-  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   text-align: start;
@@ -461,15 +527,12 @@ main {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
 @media (max-width: 768px) {
   .servicios__cards--card h3 {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    padding-top: 20px;
   }
 }
 
@@ -481,7 +544,6 @@ main {
       align-self: flex-start;
   color: #000000;
   font-size: 1.1rem;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: center;
 }
@@ -498,7 +560,6 @@ main {
 .servicios__cards .card--button a {
   background-color: #18A0FB;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
   padding: 15px 12px;
   font-weight: 400;
   border-radius: 20px;
@@ -520,7 +581,6 @@ main {
 .beneficios--title {
   color: #000000;
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 400;
   margin-top: 50px;
@@ -565,11 +625,19 @@ main {
 }
 
 .container__cards .item_2 {
-  background-color: #ffdd59;
+  background-color: #ffdd55;
 }
 
 .container__cards .item_3 {
   background-color: #ffdd55;
+}
+
+@media (max-width: 768px) {
+  .container__cards .item_3 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .container__cards .item_4 {
@@ -605,7 +673,6 @@ main {
 
 .container__cards .card__item h4 {
   color: white;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-align: center;
   font-size: 1.4rem;
@@ -616,7 +683,6 @@ main {
 
 .container__cards .card__item p {
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   text-align: center;
@@ -708,7 +774,6 @@ main {
 .formulario h2 {
   width: 100%;
   color: #000000;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
@@ -722,71 +787,10 @@ main {
   padding-top: 50px;
   color: #000000;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   text-align: center;
   max-width: 600px;
   padding: 40px 10px 0px 10px;
-}
-
-.formulario__container {
-  width: 500px;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  -webkit-box-shadow: -1px 4px 25px 1px rgba(0, 0, 0, 0.43);
-          box-shadow: -1px 4px 25px 1px rgba(0, 0, 0, 0.43);
-}
-
-@media (max-width: 768px) {
-  .formulario__container {
-    width: 350px;
-  }
-}
-
-@media (max-width: 435px) {
-  .formulario__container {
-    width: 280px;
-  }
-}
-
-.formulario .controls {
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid black;
-}
-
-.formulario .terms {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.formulario .terms a {
-  color: white;
-  text-decoration: underline;
-}
-
-.formulario .boton--form {
-  width: 100%;
-  background: #18A0FB;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
-
-.formulario .boton--form:hover {
-  background-color: #043851;
 }
 
 .formulario__pasos {
@@ -807,7 +811,6 @@ main {
   margin: 0;
   color: #000000;
   font-weight: 300;
-  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   text-align: start;
   max-width: 800px;
@@ -826,7 +829,6 @@ main {
   height: auto;
   background-color: #18A0FB;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding: 10px 40px;
   border-radius: 20px;
@@ -848,7 +850,6 @@ main {
 
 .proyectos--title {
   text-align: center;
-  font-family: "Roboto", sans-serif;
   color: white;
   font-weight: 400;
   font-size: 2rem;
@@ -886,7 +887,6 @@ main {
 
 .proyectos__container--img {
   position: relative;
-  cursor: pointer;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -903,9 +903,7 @@ main {
 }
 
 .proyectos__container--img img:hover {
-  width: 280px;
-  height: 280px;
-  border-radius: 500px;
+  opacity: 0.9;
 }
 
 @media (max-width: 435px) {
@@ -924,7 +922,6 @@ main {
 .empleo--title {
   margin-bottom: 50px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   color: #000000;
   font-weight: 400;
   font-size: 2rem;
@@ -936,7 +933,6 @@ main {
   margin-right: auto;
   max-width: 1000px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   padding: 0 10px 0 10px;
@@ -949,21 +945,9 @@ main {
   padding: 30px;
   margin: auto;
   margin-top: 40px;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
   border-radius: 20px;
   -webkit-box-shadow: -1px 4px 25px 1px rgba(0, 0, 0, 0.43);
           box-shadow: -1px 4px 25px 1px rgba(0, 0, 0, 0.43);
-}
-
-.empleo__form .terms {
-  color: #ffffff;
-}
-
-.empleo__form .terms a {
-  color: aliceblue;
-  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -978,50 +962,29 @@ main {
   }
 }
 
-.empleo--items {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid black;
-}
-
-.empleo .boton--form {
-  width: 100%;
-  background: #18A0FB;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.empleo .boton--form:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 footer {
   width: 100%;
-  height: 100px;
+  height: 150px;
   background-color: #043851;
+  -webkit-clip-path: polygon(21% 0, 82% 0, 100% 30%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 30%);
+          clip-path: polygon(21% 0, 82% 0, 100% 30%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 30%);
   min-width: 350px;
 }
 
 footer .footer {
   width: 100%;
-  height: auto;
+  height: inherit;
   display: -ms-grid;
   display: grid;
-  margin-top: 200px;
+  margin-top: 100px;
   -ms-grid-rows: 60% 40%;
   -ms-grid-columns: 1fr;
       grid-template: 60% 40% /1fr;
 }
 
 footer .footer__images {
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,33 +997,33 @@ footer .footer__images {
 }
 
 footer .footer__imagenes--img {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
 }
 
 footer .footer__imagenes--img img {
-  width: 55px;
-  height: 55px;
-}
-
-footer .footer__description {
-  background-color: #043851;
+  width: 50px;
+  height: 50px;
 }
 
 footer .footer__description--terms {
-  color: white;
+  width: 100%;
+  height: auto;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+footer .footer__description--terms a {
+  color: white;
   font-weight: 300;
-  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 footer .footer__description--esveltico {
   color: white;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .home_fixed {
@@ -1082,7 +1045,6 @@ footer .footer__description--esveltico {
 
 .proyectos_realizados h1 {
   color: #000000;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
@@ -1091,8 +1053,7 @@ footer .footer__description--esveltico {
 
 .proyectos_realizados p {
   color: #000000;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-align: center;
   padding-top: 30px;
@@ -1107,9 +1068,8 @@ footer .footer__description--esveltico {
 .proyectos_realizados__container h2 {
   width: 400px;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: start;
   padding: 9px;
   background-color: #18A0FB;
@@ -1185,5 +1145,65 @@ footer .footer__description--esveltico {
     width: 250px;
     height: 250px;
   }
+}
+
+.exito__description {
+  width: 100%;
+  height: auto;
+}
+
+.exito__description--title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #18A0FB;
+  padding-top: 150px;
+}
+
+.exito__description h3 {
+  text-align: center;
+  padding: 0 10px 0 10px;
+  font-size: #043851;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-top: 45px;
+}
+
+.exito__description--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
+.exito__description--img img {
+  width: 80px;
+  height: 80px;
+}
+
+.exito__description .button-return {
+  margin-top: 50px;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+
+.exito__description .button-return a {
+  height: auto;
+  background-color: #18A0FB;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.exito__description .button-return a:hover {
+  background-color: #043851;
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */

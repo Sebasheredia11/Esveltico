@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seccion_empresa</title>   
-    <link rel="icon" type="image/svg" href="http://imgfz.com/i/cya4SGf.png">
+    <link rel="icon" type="image/png" href="/accets/logos/favi.png">
     <link rel="stylesheet" href="scss/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ruluko&display=swap');
-    </style>
 </head>
     <body>
         <header class="header__forms">
@@ -24,15 +21,29 @@
                 <h2>Seccion empresas</h2>
                 <p class="formulario--description">Por favor diliegencia el formulario con los datos de la persona con quien llevaremos a cabo el proceso de remodelacion.</p>
                 <section class="formulario__container">
-                    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
-                    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellido">
-                    <input class="controls" type="text" name="empresas" id="empresas" placeholder="Nombre de empresa o local">
-                    <input class="controls" type="email" name="correo" id="correo" placeholder="Correo electronico">
-                    <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Numero de telefono">
-                    <input class="controls" type="addres" name="direccion" id="direccion" placeholder="Direccion">
-                    <textarea class="controls" name="trabajo" id="descripcion_trabajo" cols="30" rows="10" placeholder="Cuentanos un poco sobre el trabajo a realizar"></textarea>
-                    <p class="terms">Estoy de acuerdo con los terminos y  <a href="">ley de proteccion de datos</a></p>
-                    <input class="boton--form" type="submit" value="Enviar">
+                    <label for="">
+                        <input class="form--items" type="text" name="nombres" id="nombres" placeholder="Nombre">
+                    </label>
+                    <label for="">
+                        <input class="form--items" type="text" name="apellidos" id="apellidos" placeholder="Apellido">
+                    </label>
+                    <label for="">
+                        <input class="form--items" type="email" name="email" id="correo" placeholder="Correo electronico">
+                    </label>
+                    <label for="">
+                        <input class="form--items" type="tel" name="telefono" id="telefono" placeholder="Numero de telefono">
+                    </label>
+                    <label for="">
+                        <input class="form--items" type="addres" name="direccion" id="direccion" placeholder="Direccion">
+                    </label>
+                    <label for="">
+                         <textarea class="form--items" name="trabajo" id="descripcion_trabajo" cols="30" rows="4" placeholder="Cuentanos un poco sobre el trabajo a realizar"></textarea>
+                    </label>
+                    <label for="">
+                        <input  class="terms" type="checkbox">
+                        Estoy de acuerdo con los terminos y <a  target="blank" href="https://www.facebook.com/">ley de proteccion de datos</a>
+                    </label> 
+                    <button class="boton--form" type="">Enviar</button>
                 </section>
                 <div class="formulario__pasos">
                     <h2>¿Como es el proceso?</h2>
@@ -42,7 +53,7 @@
                     <p>4. Luego de la cita el contratista se tendra un plazo de 24 horas para enviarte la cotizacion, esta sera enviada de manera virtual pero tendras una llamada de confirmacion por parte de nuestros asesores para notificarte de la exsitencia de este.</p>
                     <p>5. Finalmente tu decides si aceptas tu cotizacion bajo los mejores estandares de calidad por nuestra compañia.</p>
                     <div class="button-return">
-                        <a class="return--home" href="index.html">Volver al home</a>
+                        <a href="index.html">Volver al home</a>
                     </div>    
                 </div>
             </section>

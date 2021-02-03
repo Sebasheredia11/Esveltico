@@ -25,12 +25,6 @@
         display: flex;
         justify-content: center;
     }
-    &--icon{
-        display: none;
-        @include tablet{ 
-            display: initial;
-        }
-    }
 }
 
 .header__nav--items{
@@ -43,7 +37,7 @@
         margin: 0 20px 0 20px;
         color: $white-esveltico;
         font-size: 0.8rem;
-        font-weight: 500;
+        font-weight: 400;
     }
     a:hover{
         background-color: $white-esveltico;
@@ -64,30 +58,32 @@
         font-size: 3rem;
         color: $white-esveltico;
         font-family: $ruluko;
+        font-weight: 300;
         letter-spacing:0.5rem;
         text-align: center;
         padding: 30px 0;
         margin: 30px auto 50px auto;
     }
     &--descrption{
-        font-weight: 400;
+        font-weight: 300;
         color: $white-esveltico;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         text-align: center;
-        padding: 10px 20px 10px 20px;  
+        padding: 10px 40px 10px 40px;  
         margin-right: auto;
         margin-left:auto;
-        max-width: 768px;
-
+        
         @include mobile{
             max-width: 300px;
+            padding-left: 0;
+            padding-right: 0;
         }
         
     }
 
     &--facebook{
         position: fixed;
-        top: 300px;
+        top: 330px;
         img{
             width: 30px;
             height: 30px;
@@ -96,7 +92,7 @@
 
     &--instagram{
         position: fixed;
-        top: 270px;
+        top: 300px;
         img{
             width: 30px;
             height: 30px;
@@ -105,7 +101,7 @@
 
     &--linkedin{
         position: fixed;
-        top: 240px;
+        top: 270px;
         img{
             width: 30px;
             height: 30px;
@@ -114,7 +110,7 @@
 
     &--whatsaap{
         position: fixed;
-        top: 330px;
+        top: 360px;
         img{
             width: 29px;
             height: 29px;
@@ -350,7 +346,7 @@ main{
             align-self: flex-start;
             color: $black-esveltico;
             font-size: 1.1rem;
-            font-weight: 300;
+            font-weight: 400;
             text-align: center;
         }
     }
@@ -362,10 +358,10 @@ main{
         a{
             background-color: $blue-light;
             color: $white-esveltico;
-            padding: 15px 12px;
-            font-weight: 400;
+            padding: 15px 20px;
+            font-weight: 300;
             border-radius: 20px;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: $white-esveltico; 
         }
         a:hover{
@@ -454,7 +450,7 @@ main{
 
         
         h4{
-            color: white;
+            color:$white-esveltico;
             font-weight: 500;
             text-align: center;
             font-size: 1.4rem;
@@ -463,12 +459,12 @@ main{
 
         p{
             color: $white-esveltico;
-            font-weight: 500;
-            font-size: 1rem;
+            font-weight: 400;
+            font-size: 1.1rem;
             text-align: center;
             justify-self: center;
             align-self: center;
-            padding: 0 5px 0 5px;
+            padding: 0 8px 0 8px;
         }
     
         &--img{
@@ -635,7 +631,7 @@ main{
         }
 
 
-        &--img{
+        &--img{ 
             position: relative;
             justify-self: center;
             align-self: center;
@@ -645,7 +641,7 @@ main{
                 width: 250px;
                 height: 250px;
                 border: 4px solid white;
-                border-radius: 130px;  
+                border-radius: 250px;  
                 &:hover{
                     opacity: 0.9;
 
@@ -858,6 +854,7 @@ footer{
             img{
                 width: 280px;
                 height: 280px; 
+                border-radius: 250px;
 
                 @include mobile{
                     width: 250px;
@@ -927,3 +924,43 @@ footer{
 }
 
 
+.fadeInUp{
+    -webkit-animation-duration: 1ms;
+    animation-duration: 1s;
+    animation-fill-mode: both ;
+    -webkit-animation-fill-mode: both ;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0.8;
+        -webkit-transform: translate3d(-100%, 0,0);
+        transform: translate3d(-100%, 0 ,0);
+    }to{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0 ,0);
+        transform: translate3d(0, 0 ,0);
+    }
+}
+
+.fadeInDown{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both ;
+    -webkit-animation-fill-mode: both ;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0 ,0);
+        transform: translate3d(100%, 0 , 0);
+    }to{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0% ,0);
+    }
+}

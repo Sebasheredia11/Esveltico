@@ -6,7 +6,6 @@
     <title>Esveltico</title>   
     <link rel="icon" type="image/png" href="/accets/logos/favi.png">
     <link rel="stylesheet" href="scss/styles.css">
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ruluko&display=swap');
     </style>
@@ -14,18 +13,17 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <div class="header__nav--img">
-                <img src="./accets/logos/Logo sobre azul.svg" alt="logo-esveltico">
-            </div>
-            <!-- <div class="header__nav--icon">
-                <a href=""><img src="http://imgfz.com/i/2otY8hB.png" alt="icon-menu"></a>
-            </div> -->
-            <ul class="header__nav--items">
+            <img class="header__nav--img" src="/accets/logos/Logo sobre azul.svg" alt="">
+            <button class="hamburguer" id="hamburguer"> <img src="/accets/logos/Icon Menu Nav.png" alt=""> 
+                <i class="fas fa-bars"> </i>
+            </button>
+            <ul class="header__nav--items" id="header__nav--items">
+                <li><a href="" class="active">Inicio</a></li>
                 <li><a href="#beneficts">Beneficios</a></li>
                 <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#work">Trabaja con nosotros</a> </li> 
-            </ul>  
-        </nav>
+                <li><a href="#work">Trabaja con nosotros</a></li>
+            </ul>
+          </nav>
         <section class="header__information">
             <h1 class="header__information--title fadeInUp">Bienvenidos a Esveltico</h1>
             <h2 class="header__information--descrption fadeInDown">Somos una empresa dedicada a la remodelacion y decoracion de interiores a nivel profesional.</h2>
@@ -138,18 +136,53 @@
         <section class="proyectos">
             <h2 id="projects" class="proyectos--title">Proyectos realizados</h2>
             <section class="proyectos__container"> 
-                <div class="proyectos__container--img">
+                <!-- <div class="proyectos__container--img">
                     <img src="/accets/imagenes/WhatsApp Image 2021-01-25 at 11.17.06 AM (1).jpeg" alt="">
+                </div> -->
+                <div class="contenedor">
+                    <figure>
+                        <img src="/accets/imagenes/pexels-max-vakhtbovych-6238608.jpg" alt="">
+                        <div class="capa">
+                            <h3>Quintas del marques</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                        </div>
+                    </figure>
                 </div>
-                <div class="proyectos__container--img">
-                    <img src="/accets/imagenes/WhatsApp Image 2021-01-25 at 11.17.06 AM (2).jpeg" alt="">
+                <div class="contenedor">
+                    <figure>
+                        <img src="/accets/imagenes/fondo azul construccion.jpg" alt="">
+                        <div class="capa">
+                            <h3>Quintas del marques</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                        </div>
+                    </figure>
                 </div>
-                <div class="proyectos__container--img">
-                    <img src="/accets/imagenes/WhatsApp Image 2021-01-25 at 11.17.06 AM (3).jpeg" alt="">
+                <div class="contenedor">
+                    <a href="proyectos.html">
+                        <figure>
+                        <img src="/accets/imagenes/WhatsApp Image 2021-01-25 at 11.17.06 AM (3).jpeg" alt="">
+                        <div class="capa">
+                            <h3>Quintas del marques</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        </figure>
+                    </a>  
                 </div>
-                <div class="proyectos__container--img">
+                <div class="contenedor">
+                    <figure>
+                        <img src="/accets/imagenes/WhatsApp Image 2021-01-25 at 11.17.06 AM (1).jpeg" alt="">
+                        <div class="capa">
+                            <h3>Quintas del marques</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                        </div>
+                    </figure>
+                </div>
+                <!-- <div class="proyectos__container--img">
                     <a href="proyectos.html"><img src="http://imgfz.com/i/0i5rNTh.png" alt=""></a>    
-                </div>
+                </div> -->
             </section>
         </section>
         <section id="work" class="empleo">
@@ -203,12 +236,13 @@
             </div>
             <div class="footer__description">   
                 <div class="footer__description--terms">
-                    <a  href="/exito.html">Terminos | Privacidad</a>
+                    <a  href="/terminos.html">Terminos | Privacidad</a>
                 </div>
                 <p class="footer__description--esveltico">Esveltico 2021</p>
             </div>
         </section>
     </footer>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>
 

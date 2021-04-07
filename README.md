@@ -1,2 +1,2 @@
 # Esveltico
-Pagina web oficial de la compañía Esveltico.
+Pagina web antigua de Esveltico
